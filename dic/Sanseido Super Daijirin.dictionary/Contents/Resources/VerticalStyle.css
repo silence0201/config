@@ -1,0 +1,239 @@
+@charset "UTF-8";
+@namespace d url(http://www.apple.com/DTDs/DictionaryService-1.0.rng);
+
+body {
+	/* Need to find a way to always use the Japanese font */
+	font-family: -apple-system, 'HiraKakuProN-W3';
+	font-weight:normal;
+	/*
+	font-size: 100%;
+	*/
+	-webkit-writing-mode: vertical-rl;
+	vertical-align:baseline;
+	margin-bottom: 0.5em;
+	margin-left: 1.5em;
+}
+
+*.entry {
+	margin-bottom: 1.0em;
+	margin-left: 3em;
+}
+
+html {
+	margin-top: 0.5em;
+	margin-bottom: 1em;
+	margin-left: 0.4em;
+	margin-right: 10px;
+}
+
+html.apple_display-separateview {
+	-webkit-column-width: 25em;
+	-webkit-column-rule-color: LightGrey;
+	-webkit-column-rule-style: solid;
+	-webkit-column-rule-width: 1px;
+}
+
+a {
+	color:#2971A7;
+	text-decoration:none;
+}
+
+a:hover	{
+	color:#2971A7;
+	text-decoration:underline;
+}
+
+span.sn {
+	-webkit-text-combine: horizontal;
+}
+span.se1 > span.sn
+{
+	-webkit-text-combine: horizontal;
+	padding-top: 6px;
+	padding-bottom: 1px;
+	padding-right: 3px;
+	margin-left: 0em;
+	margin-top: 0.5em;
+	vertical-align: 0%;
+}
+
+span.pr span.ph.t_アクセント,
+div.AccentPatterns span.xrg span.xr a span.ph.t_アクセント
+{
+	-webkit-text-combine: horizontal;
+	padding: 3px 1px 1px 1px;
+	margin-top: 0.2em;
+	margin-bottom: 0.2em;
+}
+span.pr span.xrg:first-child
+{
+	margin-top:0.4em;
+}
+
+/*
+span.posg {
+	vertical-align: 10%;
+}
+*/
+
+
+span.sg ~ span.subEntryBlock {
+	margin-right: 0.5em;
+	text-indent: -3.5em;
+	margin-top: 4em;
+	margin-left: 1em;
+}
+
+span.se1 {
+	display: block;
+	margin-right: 0.2em;
+	margin-left: 1em;
+	/*if indent margin-top: 16px;*/
+}
+
+span.se2Group {
+	display: block;
+	margin-right: 0.2em;
+	margin-left: 0.5em;
+	margin-top: 0.2em;
+	/*if indent margin-top: 16px;*/
+}
+
+
+span.se3 {
+	margin-top: 1.6em;
+	margin-right: 0.2em;
+	margin-left: 0.5em;
+	margin-bottom: 0.3em;
+	text-indent: 0em;
+}
+
+span.se3 > span.sn {
+	margin-top: -1.35em;
+	margin-left: 0.2em;
+}
+
+span.sg span.note	{
+	margin-right: 0.2em;
+	margin-top: -1em;
+	margin-left: 0em;
+}
+span.sg span.msDict span.note	{
+	margin-top: 0em;
+}
+
+
+span.subEntryBlock
+{
+	margin-bottom: 3em;
+}
+
+span.sg+span.subEntryBlock
+{
+	margin-top: 2em;
+	margin-right: 3em;
+}
+span.sg ~ span.subEntryBlock
+{
+	margin-top: 2em;
+	margin-right: 3em;
+	margin-bottom: 3em;
+	text-indent: 0em;
+}
+
+span.t_idioms span.subEntry, 
+span.t_derivatives span.subEntry, 
+span.t_homonym span.subEntry
+{
+	margin-top: 0em;
+}
+
+
+span.t_idioms > span.lbl,
+span.t_derivatives > span.lbl,
+span.t_homonym > span.lbl,
+span.infg > span.lbl
+{
+	margin-bottom: 2em;
+	padding: 9px 3px 9px 3px;
+	vertical-align: 0%;
+}
+
+span.t_idioms > span.lbl,
+span.t_derivatives > span.lbl,
+span.t_homonym > span.lbl {
+	padding: 3px 9px 3px 3px;
+	border-bottom: none;
+	border-left: solid thin #ddd;
+	margin-left: 1em;
+	margin-top: 0em;
+	margin-bottom: 0em;
+}
+span.subEntry span.fg + span.se2
+{
+	margin-right: 0.7em;
+	margin-top: 0.2em;
+}
+span.subEntry span.se2
+{
+	margin-right: 0.7em;
+}
+
+span.etym {
+	margin-right: 0.2em;
+	margin-left: 0.5em;
+	margin-top: 0.2em;
+	text-indent: 0em;
+}
+
+div.xrgBlock
+{
+	margin-top: 2em;
+	margin-right: 3em;
+	border-top: none;
+	border-right: solid thin #ddd;
+	margin-left: 1em;
+	margin-bottom: 3em;
+}
+div.xrgBlock span.label
+{
+	margin-top: 0em;
+	margin-right: 1em;
+}
+
+div.xrgBlock span.xrgs
+{
+	display: block;
+	margin-top: 2em;
+	margin-left: 0.2em;
+}
+
+
+span.infg	 { margin-right: 0.5em; margin-top: 0.3em; }
+
+
+
+/*
+	color: green;
+	background-color: lightblue;
+*/
+
+div.AccentPatterns span.pr_example span.pr_high
+{
+	text-decoration: overline;
+	/*text-underline-position: above;*/
+}
+div.AccentPatterns span.pr_high_style.horizontal
+{
+	display: none;
+}
+div.AccentPatterns span.pr_high_style.vertical
+{
+	display: inherit;
+}
+
+div.AccentPatterns.figure img
+{
+	width: auto;
+	height: 96%;
+}
