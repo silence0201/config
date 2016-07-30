@@ -1,0 +1,41 @@
+{
+	"bootstrapped": true,
+	"ignore_vcs_packages": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"Alignment",
+		"BracketHighlighter",
+		"ChannelRepositoryTools",
+		"Clipboard Manager",
+		"ColorPicker",
+		"CSScomb",
+		"DashDoc",
+		"Emmet",
+		"EncodingHelper",
+		"Evernote",
+		"HTML-CSS-JS Prettify",
+		"HTML5",
+		"Javap",
+		"JavaScript Console",
+		"JsFormat",
+		"LineEndings",
+		"Markdown Preview",
+		"MarkdownEditing",
+		"Package Control",
+		"Pretty JSON",
+		"Sass",
+		"ScrollOffset",
+		"SideBarEnhancements",
+		"SublimeCodeIntel",
+		"SublimeGit",
+		"SublimeLinter",
+		"SublimeLinter-annotations",
+		"SublimeLinter-csslint",
+		"Tag",
+		"Theme - Soda SolarizedDark",
+		"TrailingSpaces"
+	]
+}
